@@ -1,6 +1,7 @@
 [template]
 src = "<%= @name %>.tmpl"
 dest = "/etc/nubis-config/<%= @name %>.<%= @format %>"
+prefix = "<%= @prefix %>"
 keys = [
-    "<%= @prefix %>",
+    "/config"
 ]

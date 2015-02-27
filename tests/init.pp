@@ -12,5 +12,5 @@
 include nubis_configuration
 
 nubis::configuration{ 'dpaste':
-	prefix => '/%%APPLICATION%%/%%ENVIRONMENT%%/config',
+	prefix => '/%%PROJECT%%/%%ENVIRONMENT%%',
 }

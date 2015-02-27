@@ -43,6 +43,13 @@ define nubis::configuration(
   $prefix
 ) {
 
+  file { "/etc/nubis-config":
+    ensure => directory,
+    owner => 0,
+    group => 0,
+    mode  => 755,
+  }
+
   file { "/etc/confd/conf.d/$name.toml":
       ensure => present,
       owner => 0,
