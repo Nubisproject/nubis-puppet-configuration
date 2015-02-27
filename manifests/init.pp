@@ -36,6 +36,30 @@
 # Copyright 2015 Your name here, unless otherwise noted.
 #
 class nubis_configuration {
+}
 
+define nubis::configuration(
+  $format = 'sh',
+  $prefix
+) {
 
+  file { "/etc/confd/conf.d/$name.toml":
+      ensure => present,
+      owner => 0,
+      group => 0,
+      content => template("nubis_configuration/config.toml.erb"),
+  }
+  file { "/etc/confd/templates/$name.tmpl":
+      ensure => present,
+      owner => 0,
+      group => 0,
+      source => "puppet:///modules/nubis_configuration/config.$format.tmpl"
+  }
+  file { "/etc/nubis.d/confd":
+    ensure => present,
+    owner => 0,
+    group => 0,
+    mode => 555,
+    source => "puppet:///modules/nubis_configuration/confd",
+  }
 }

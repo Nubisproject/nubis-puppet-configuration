@@ -1,0 +1,4 @@
+#!/bin/sh
+
+eval `ec2metadata --user-data`
+

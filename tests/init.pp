@@ -10,3 +10,7 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 include nubis_configuration
+
+nubis::configuration{ 'dpaste':
+	prefix => '/%%APPLICATION%%/%%ENVIRONMENT%%/config',
+}
