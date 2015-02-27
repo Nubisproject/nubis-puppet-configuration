@@ -1,5 +1,5 @@
 <?php
 {{range gets "/config/*"}}
-  ${{base .Key}}="{{.Value}}";
+  ${{base .Key}} = "{{.Value}}";
 {{end}}
 ?>
