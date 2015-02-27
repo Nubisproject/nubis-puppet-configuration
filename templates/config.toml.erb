@@ -5,3 +5,7 @@ prefix = "<%= @prefix %>"
 keys = [
     "/config"
 ]
+
+<% if @reload %>
+reload_cmd = "<%= @reload %>"
+<% end %>
