@@ -1,7 +1,9 @@
 #!/bin/sh
+set -x
+
 eval `ec2metadata --user-data`
 
-find /etc/confd/conf.d -type f -name '*.toml' | xargs sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
-find /etc/confd/conf.d -type f -name '*.toml' | xargs sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
+find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
+find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
 
 service confd restart
