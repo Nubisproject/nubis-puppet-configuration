@@ -1,7 +1,14 @@
 #!/bin/sh
 set -x
 
-eval `ec2metadata --user-data`
+USER_DATA=`ec2metadata --user-data`
+
+if [ "$USER_DATA" == "unavailable" ]; then
+  echo "No userdata"
+  exit
+fi
+
+eval $USER_DATA
 
 find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
 find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
