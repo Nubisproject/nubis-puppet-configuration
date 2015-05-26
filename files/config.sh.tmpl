@@ -1,5 +1,3 @@
-{{if exists "/config"}}
 {{range gets "/config/*"}}
 {{base .Key}}="{{.Value}}"
-{{end}}
 {{end}}
