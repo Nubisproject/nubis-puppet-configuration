@@ -12,7 +12,7 @@
 include nubis_configuration
 
 nubis::configuration{ 'dpaste':
-	prefix => '/%%PROJECT%%/%%ENVIRONMENT%%',
+	prefix => '/%%STACK%%/%%ENVIRONMENT%%',
         format => "php",
         reload => "apachectl graceful",
 }
