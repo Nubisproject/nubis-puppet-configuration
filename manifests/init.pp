@@ -40,7 +40,7 @@ class nubis_configuration {
 
 define nubis::configuration(
   $format = 'sh',
-  $prefix = '/%%PROJECT%%/%%ENVIRONMENT%%',
+  $prefix = '/%%STACK%%/%%ENVIRONMENT%%',
   $reload = undef,
 ) {
 
