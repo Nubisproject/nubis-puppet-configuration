@@ -3,15 +3,23 @@ set -x
 
 USER_DATA=`curl -fq http://169.254.169.254/latest/user-data`
 
-if [ "$USER_DATA" == "unavailable" ]; then
+if [ "$USER_DATA" == "" ]; then
   echo "No userdata"
   exit
 fi
 
 eval $USER_DATA
 
-find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
-find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%STACK%%/$NUBIS_STACK/g"
-find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
+if [ "$NUBIS_ENVIRONMENT" != "" ]; then
+  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
+fi
+
+if [ "$NUBIS_STACK" != "" ]; then
+  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%STACK%%/$NUBIS_STACK/g"
+fi
+
+if [ "$NUBIS_PROJECT" != ""]; then
+  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
+fi
 
 service confd restart
