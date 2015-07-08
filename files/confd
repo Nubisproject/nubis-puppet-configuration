@@ -18,7 +18,7 @@ if [ "$NUBIS_STACK" != "" ]; then
   find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%STACK%%/$NUBIS_STACK/g"
 fi
 
-if [ "$NUBIS_PROJECT" != ""]; then
+if [ "$NUBIS_PROJECT" != "" ]; then
   find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
 fi
 
