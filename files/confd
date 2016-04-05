@@ -22,4 +22,12 @@ if [ "$NUBIS_PROJECT" != "" ]; then
   find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
 fi
 
-service confd restart
+# RHEL sysv consul init scripts are buggy
+# https://github.com/nubisproject/nubis-base/issues/247
+OSFAMILY=$(facter osfamily)
+SERVICE=$(which service)
+if [ "$OSFAMILY" = "RedHat" ]; then
+  DAEMONIZE="daemonize"
+fi
+
+$DAEMONIZE $SERVICE confd restart
