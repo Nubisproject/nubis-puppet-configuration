@@ -1,11 +1,19 @@
 # Change Log
 
+## [v1.2.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.2.0) (2016-07-07)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.1.0...v1.2.0)
+
+**Merged pull requests:**
+
+- Update CHANGELOG for v1.1.0 release [\#19](https://github.com/nubisproject/nubis-puppet-configuration/pull/19) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [v1.1.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.1.0) (2016-04-18)
 [Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.1...v1.1.0)
 
 **Closed issues:**
 
 - Tag v1.1.0 release [\#13](https://github.com/nubisproject/nubis-puppet-configuration/issues/13)
+- Tag v1.1.0 release [\#18](https://github.com/nubisproject/nubis-puppet-configuration/issues/18)
 
 ## [v1.0.1](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.0.1) (2015-11-20)
 [Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.0...v1.0.1)
