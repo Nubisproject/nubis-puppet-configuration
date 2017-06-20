@@ -1,28 +1,58 @@
 # Change Log
 
-## [v0.9.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v0.9.0) (2015-07-22)
+## [v1.2.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.2.0) (2016-07-07)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.1.0...v1.2.0)
+
+**Closed issues:**
+
+- Tag v1.2.0 release [\#20](https://github.com/nubisproject/nubis-puppet-configuration/issues/20)
 
 **Merged pull requests:**
 
-- fix shell tyop [\#11](https://github.com/Nubisproject/nubis-puppet-configuration/pull/11) ([gozer](https://github.com/gozer))
+- Update CHANGELOG for v1.2.0 release [\#21](https://github.com/nubisproject/nubis-puppet-configuration/pull/21) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.1.0 release [\#19](https://github.com/nubisproject/nubis-puppet-configuration/pull/19) ([tinnightcap](https://github.com/tinnightcap))
 
-- use curl instead of ec2metadata [\#10](https://github.com/Nubisproject/nubis-puppet-configuration/pull/10) ([gozer](https://github.com/gozer))
+## [v1.1.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.1.0) (2016-04-18)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.1...v1.1.0)
 
-- use curl instead of ec2metadata [\#9](https://github.com/Nubisproject/nubis-puppet-configuration/pull/9) ([gozer](https://github.com/gozer))
+**Closed issues:**
 
-- We now use the stack name for Consul key path, not the project name. [\#8](https://github.com/Nubisproject/nubis-puppet-configuration/pull/8) ([gozer](https://github.com/gozer))
+- Tag v1.1.0 release [\#13](https://github.com/nubisproject/nubis-puppet-configuration/issues/13)
+- Tag v1.1.0 release [\#18](https://github.com/nubisproject/nubis-puppet-configuration/issues/18)
 
-- Revert "dont break if config doesnt exist" [\#7](https://github.com/Nubisproject/nubis-puppet-configuration/pull/7) ([gozer](https://github.com/gozer))
+## [v1.0.1](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.0.1) (2015-11-20)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.0...v1.0.1)
 
-- bash-ism [\#6](https://github.com/Nubisproject/nubis-puppet-configuration/pull/6) ([gozer](https://github.com/gozer))
+**Closed issues:**
 
-- Just make sure we don't clobber things when we have no user-data. [\#5](https://github.com/Nubisproject/nubis-puppet-configuration/pull/5) ([gozer](https://github.com/gozer))
+- Tag  release [\#15](https://github.com/nubisproject/nubis-puppet-configuration/issues/15)
+- Tag v1.0.1 release [\#16](https://github.com/nubisproject/nubis-puppet-configuration/issues/16)
 
-- More verbose [\#4](https://github.com/Nubisproject/nubis-puppet-configuration/pull/4) ([gozer](https://github.com/gozer))
+**Merged pull requests:**
 
-- add support for reload command [\#3](https://github.com/Nubisproject/nubis-puppet-configuration/pull/3) ([gozer](https://github.com/gozer))
+- Update CHANGELOG for v1.0.1 release [\#17](https://github.com/nubisproject/nubis-puppet-configuration/pull/17) ([tinnightcap](https://github.com/tinnightcap))
 
-- Working PHP and Shell confd [\#1](https://github.com/Nubisproject/nubis-puppet-configuration/pull/1) ([gozer](https://github.com/gozer))
+## [v1.0.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.0.0) (2015-07-22)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v0.9.0...v1.0.0)
+
+**Closed issues:**
+
+- Tag v1.0.0 release [\#14](https://github.com/nubisproject/nubis-puppet-configuration/issues/14)
+
+## [v0.9.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v0.9.0) (2015-07-22)
+**Merged pull requests:**
+
+- Updating changelog for v0.9.0 release [\#12](https://github.com/nubisproject/nubis-puppet-configuration/pull/12) ([gozer](https://github.com/gozer))
+- fix shell tyop [\#11](https://github.com/nubisproject/nubis-puppet-configuration/pull/11) ([gozer](https://github.com/gozer))
+- use curl instead of ec2metadata [\#10](https://github.com/nubisproject/nubis-puppet-configuration/pull/10) ([gozer](https://github.com/gozer))
+- use curl instead of ec2metadata [\#9](https://github.com/nubisproject/nubis-puppet-configuration/pull/9) ([gozer](https://github.com/gozer))
+- We now use the stack name for Consul key path, not the project name. [\#8](https://github.com/nubisproject/nubis-puppet-configuration/pull/8) ([gozer](https://github.com/gozer))
+- Revert "dont break if config doesnt exist" [\#7](https://github.com/nubisproject/nubis-puppet-configuration/pull/7) ([gozer](https://github.com/gozer))
+- bash-ism [\#6](https://github.com/nubisproject/nubis-puppet-configuration/pull/6) ([gozer](https://github.com/gozer))
+- Just make sure we don't clobber things when we have no user-data. [\#5](https://github.com/nubisproject/nubis-puppet-configuration/pull/5) ([gozer](https://github.com/gozer))
+- More verbose [\#4](https://github.com/nubisproject/nubis-puppet-configuration/pull/4) ([gozer](https://github.com/gozer))
+- add support for reload command [\#3](https://github.com/nubisproject/nubis-puppet-configuration/pull/3) ([gozer](https://github.com/gozer))
+- Working PHP and Shell confd [\#1](https://github.com/nubisproject/nubis-puppet-configuration/pull/1) ([gozer](https://github.com/gozer))
 
 
 
