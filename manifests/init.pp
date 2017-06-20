@@ -63,7 +63,7 @@ define nubis::configuration(
       group => 0,
       source => "puppet:///modules/nubis_configuration/config.$format.tmpl"
   }
-  file { "/etc/nubis.d/confd":
+  file { "/etc/nubis.d/01-confd":
     ensure => present,
     owner => 0,
     group => 0,
