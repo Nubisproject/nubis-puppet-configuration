@@ -1,6 +1,6 @@
 {
   "name": "nubis-nubis_configuration",
-  "version": "0.0.1",
+  "version": "1.3.0",
   "author": "nubis",
   "summary": "Nubis Puppet Module for Configuration Service",
   "license": "MPL-2.0",
