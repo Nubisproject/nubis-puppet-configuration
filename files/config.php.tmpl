@@ -2,4 +2,10 @@
 {{range gets "/config/*"}}
   ${{base .Key}} = "{{.Value}}";
 {{end}}
+{{/* We have 2 end statements below for the if and the range */}}
+{{ if exists "/config/Database/Server" }}
+  {{range gets "/config/Database/*"}}
+  ${{base .Key}} = "{{.Value}}";
+  {{end}}
+{{end}}
 ?>
