@@ -10,6 +10,10 @@ fi
 
 eval $USER_DATA
 
+if [ "$NUBIS_ARENA" != "" ]; then
+  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ARENA%%/$NUBIS_ARENA/g"
+fi
+
 if [ "$NUBIS_ENVIRONMENT" != "" ]; then
   find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
 fi
