@@ -1,33 +1,33 @@
 #!/bin/bash
 set -x
 
-USER_DATA=`curl -fq http://169.254.169.254/latest/user-data`
+USER_DATA=$(curl -fq http://169.254.169.254/latest/user-data)
 
 if [ "$USER_DATA" == "" ]; then
   echo "No userdata"
   exit
 fi
 
-eval $USER_DATA
+eval "$USER_DATA"
 
 if [ "$NUBIS_ARENA" != "" ]; then
-  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ARENA%%/$NUBIS_ARENA/g"
+  find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%ARENA%%/$NUBIS_ARENA/g"
 fi
 
 if [ "$NUBIS_ENVIRONMENT" != "" ]; then
-  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
+  find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%ENVIRONMENT%%/$NUBIS_ENVIRONMENT/g"
 fi
 
 if [ "$NUBIS_STACK" != "" ]; then
-  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%STACK%%/$NUBIS_STACK/g"
+  find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%STACK%%/$NUBIS_STACK/g"
 fi
 
 if [ "$NUBIS_PROJECT" != "" ]; then
-  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
+  find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%PROJECT%%/$NUBIS_PROJECT/g"
 fi
 
 if [ "$NUBIS_PURPOSE" != "" ]; then
-  find /etc/confd/conf.d -type f -name '*.toml' | xargs --verbose sed -i -e "s/%%PURPOSE%%/$NUBIS_PURPOSE/g"
+  find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%PURPOSE%%/$NUBIS_PURPOSE/g"
 fi
 
 # RHEL sysv consul init scripts are buggy
@@ -38,4 +38,4 @@ if [ "$OSFAMILY" = "RedHat" ]; then
   DAEMONIZE="daemonize"
 fi
 
-$DAEMONIZE $SERVICE confd restart
+"$DAEMONIZE" "$SERVICE" confd restart
