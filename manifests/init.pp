@@ -48,7 +48,7 @@ define nubis::configuration(
     ensure => directory,
     owner => 0,
     group => 0,
-    mode  => 755,
+    mode  => '0755',
   }
 
   file { "/etc/confd/conf.d/$name.toml":
