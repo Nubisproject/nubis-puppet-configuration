@@ -67,7 +67,7 @@ define nubis::configuration(
     ensure => present,
     owner => 0,
     group => 0,
-    mode => 555,
+    mode => '0555',
     source => "puppet:///modules/nubis_configuration/confd",
   }
 }
