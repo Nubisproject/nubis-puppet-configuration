@@ -1,17 +1,34 @@
 # Change Log
 
-## [v1.3.2](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.2) (2017-10-05)
-[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.2...v1.3.2)
+## [v1.3.3](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.3) (2017-11-28)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.2...v1.3.3)
+
+**Closed issues:**
+
+- \[puppet\] File mode should be string [\#41](https://github.com/nubisproject/nubis-puppet-configuration/issues/41)
+- Release v1.3.0 [\#29](https://github.com/nubisproject/nubis-puppet-configuration/issues/29)
+- Add support for check commands [\#2](https://github.com/nubisproject/nubis-puppet-configuration/issues/2)
 
 **Merged pull requests:**
 
-- v1.3.2 [\#34](https://github.com/nubisproject/nubis-puppet-configuration/pull/34) ([gozer](https://github.com/gozer))
+- \[Centennial\] 1.3.3 [\#44](https://github.com/nubisproject/nubis-puppet-configuration/pull/44) ([gozer](https://github.com/gozer))
+- add missed mode [\#43](https://github.com/nubisproject/nubis-puppet-configuration/pull/43) ([gozer](https://github.com/gozer))
+- Mode should be string [\#42](https://github.com/nubisproject/nubis-puppet-configuration/pull/42) ([gozer](https://github.com/gozer))
+- Lint check fixups [\#40](https://github.com/nubisproject/nubis-puppet-configuration/pull/40) ([tinnightcap](https://github.com/tinnightcap))
+- Travis++ [\#38](https://github.com/nubisproject/nubis-puppet-configuration/pull/38) ([gozer](https://github.com/gozer))
 
 ## [v1.3.2](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.2) (2017-10-05)
 [Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.1...v1.3.2)
 
+**Closed issues:**
+
+- Tag v1.3.2 release [\#35](https://github.com/nubisproject/nubis-puppet-configuration/issues/35)
+
 **Merged pull requests:**
 
+- Merge v1.3.2 release into develop. \[skip ci\] [\#37](https://github.com/nubisproject/nubis-puppet-configuration/pull/37) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.3.2 release \[skip ci\] [\#36](https://github.com/nubisproject/nubis-puppet-configuration/pull/36) ([tinnightcap](https://github.com/tinnightcap))
+- v1.3.2 [\#34](https://github.com/nubisproject/nubis-puppet-configuration/pull/34) ([gozer](https://github.com/gozer))
 - Handle %%ARENA%% in confd [\#33](https://github.com/nubisproject/nubis-puppet-configuration/pull/33) ([gozer](https://github.com/gozer))
 - tag v1.3.1 [\#32](https://github.com/nubisproject/nubis-puppet-configuration/pull/32) ([gozer](https://github.com/gozer))
 
