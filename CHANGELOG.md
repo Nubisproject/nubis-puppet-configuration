@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.3.4](https://github.com/nubisproject/nubis-puppet-configuration/tree/1.3.4) (2018-02-15)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.3...1.3.4)
+
+**Closed issues:**
+
+- Shells don't like spaces in variable assignement [\#48](https://github.com/nubisproject/nubis-puppet-configuration/issues/48)
+
+**Merged pull requests:**
+
+- Fix shell typos [\#49](https://github.com/nubisproject/nubis-puppet-configuration/pull/49) ([gozer](https://github.com/gozer))
+
 ## [v1.3.3](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.3) (2017-11-28)
 [Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.2...v1.3.3)
 
@@ -8,9 +19,12 @@
 - \[puppet\] File mode should be string [\#41](https://github.com/nubisproject/nubis-puppet-configuration/issues/41)
 - Release v1.3.0 [\#29](https://github.com/nubisproject/nubis-puppet-configuration/issues/29)
 - Add support for check commands [\#2](https://github.com/nubisproject/nubis-puppet-configuration/issues/2)
+- Tag v1.3.3 release [\#45](https://github.com/nubisproject/nubis-puppet-configuration/issues/45)
 
 **Merged pull requests:**
 
+- Merge v1.3.3 release into develop. \[skip ci\] [\#47](https://github.com/nubisproject/nubis-puppet-configuration/pull/47) ([tinnightcap](https://github.com/tinnightcap))
+- Update CHANGELOG for v1.3.3 release \[skip ci\] [\#46](https://github.com/nubisproject/nubis-puppet-configuration/pull/46) ([tinnightcap](https://github.com/tinnightcap))
 - \[Centennial\] 1.3.3 [\#44](https://github.com/nubisproject/nubis-puppet-configuration/pull/44) ([gozer](https://github.com/gozer))
 - add missed mode [\#43](https://github.com/nubisproject/nubis-puppet-configuration/pull/43) ([gozer](https://github.com/gozer))
 - Mode should be string [\#42](https://github.com/nubisproject/nubis-puppet-configuration/pull/42) ([gozer](https://github.com/gozer))
