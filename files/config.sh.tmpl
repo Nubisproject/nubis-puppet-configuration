@@ -7,6 +7,6 @@
  {{ $Path := printf "/config/%s/*" $Dir}}
 # From {{ $Path }}
   {{ range gets $Path}}
-{{ $Dir }}_{{base .Key}} = "{{.Value}}"
+{{ $Dir }}_{{base .Key}}="{{.Value}}"
  {{ end}}
 {{ end}}
