@@ -1,7 +1,26 @@
 # Change Log
 
+## [v1.3.5](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.5) (2018-05-07)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/1.3.4...v1.3.5)
+
+**Closed issues:**
+
+- Use nubis-metadata instead of AWS user-data api directly [\#54](https://github.com/nubisproject/nubis-puppet-configuration/issues/54)
+
+**Merged pull requests:**
+
+- Use nubis-metadata [\#55](https://github.com/nubisproject/nubis-puppet-configuration/pull/55) ([gozer](https://github.com/gozer))
+- Migrate to new travis docker container [\#53](https://github.com/nubisproject/nubis-puppet-configuration/pull/53) ([tinnightcap](https://github.com/tinnightcap))
+
 ## [1.3.4](https://github.com/nubisproject/nubis-puppet-configuration/tree/1.3.4) (2018-02-15)
-[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.3...1.3.4)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.4...1.3.4)
+
+**Closed issues:**
+
+- Tag 1.3.4 release [\#50](https://github.com/nubisproject/nubis-puppet-configuration/issues/50)
+
+## [v1.3.4](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.4) (2018-02-15)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.3.3...v1.3.4)
 
 **Closed issues:**
 
@@ -9,6 +28,8 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG for 1.3.4 release \[skip ci\] [\#52](https://github.com/nubisproject/nubis-puppet-configuration/pull/52) ([nubis-automation](https://github.com/nubis-automation))
+- Update CHANGELOG for 1.3.4 release \[skip ci\] [\#51](https://github.com/nubisproject/nubis-puppet-configuration/pull/51) ([nubis-automation](https://github.com/nubis-automation))
 - Fix shell typos [\#49](https://github.com/nubisproject/nubis-puppet-configuration/pull/49) ([gozer](https://github.com/gozer))
 
 ## [v1.3.3](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.3.3) (2017-11-28)
@@ -104,7 +125,7 @@
 - Update CHANGELOG for v1.1.0 release [\#19](https://github.com/nubisproject/nubis-puppet-configuration/pull/19) ([tinnightcap](https://github.com/tinnightcap))
 
 ## [v1.1.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.1.0) (2016-04-18)
-[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.0...v1.1.0)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v0.9.0...v1.1.0)
 
 **Closed issues:**
 
@@ -116,14 +137,14 @@
 
 - Update CHANGELOG for v1.0.1 release [\#17](https://github.com/nubisproject/nubis-puppet-configuration/pull/17) ([tinnightcap](https://github.com/tinnightcap))
 
-## [v1.0.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.0.0) (2015-07-22)
-[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v0.9.0...v1.0.0)
+## [v0.9.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v0.9.0) (2015-07-22)
+[Full Changelog](https://github.com/nubisproject/nubis-puppet-configuration/compare/v1.0.0...v0.9.0)
 
+## [v1.0.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v1.0.0) (2015-07-22)
 **Closed issues:**
 
 - Tag v1.0.0 release [\#14](https://github.com/nubisproject/nubis-puppet-configuration/issues/14)
 
-## [v0.9.0](https://github.com/nubisproject/nubis-puppet-configuration/tree/v0.9.0) (2015-07-22)
 **Merged pull requests:**
 
 - Updating changelog for v0.9.0 release [\#12](https://github.com/nubisproject/nubis-puppet-configuration/pull/12) ([gozer](https://github.com/gozer))
