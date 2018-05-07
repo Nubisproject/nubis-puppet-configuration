@@ -1,14 +1,11 @@
 #!/bin/bash
 set -x
 
-USER_DATA=$(curl -fq http://169.254.169.254/latest/user-data)
-
-if [ "$USER_DATA" == "" ]; then
-  echo "No userdata"
-  exit
-fi
-
-eval "$USER_DATA"
+NUBIS_ARENA=$(nubis-metadata NUBIS_ARENA)
+NUBIS_ENVIRONMENT=$(nubis-metadata NUBIS_ENVIRONMENT)
+NUBIS_STACK=$(nubis-metadata NUBIS_STACK)
+NUBIS_PROJECT=$(nubis-metadata NUBIS_PROJECT)
+NUBIS_PURPOSE=$(nubis-metadata NUBIS_PURPOSE)
 
 if [ "$NUBIS_ARENA" != "" ]; then
   find /etc/confd/conf.d -type f -print0 -name '*.toml' | xargs -0 --verbose sed -i -e "s/%%ARENA%%/$NUBIS_ARENA/g"
